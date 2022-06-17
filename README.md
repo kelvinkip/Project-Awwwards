@@ -1,9 +1,9 @@
 # Awwards
 
-#### By Catherine Kimani
+#### By Kelvin kiplangat
 
 ### HomePage
-![catherine](/static/images/image.png)
+![kelvin](/static/images/image.png)
 
 ## Table of Content
 
@@ -28,7 +28,7 @@
 * View my profile page
 
 ## Live Link
-https://kate-awards.herokuapp.com/
+
 
 ## Installation
 
@@ -61,6 +61,6 @@ Copyright (c) [2022] [MIT License](LICENCE)
 
 ## Authors Info
 
-Linked - [Catherine Kimani](https://www.linkedin.com/incatherine-kimani-5464ba1b6)
+
 
 [Go Back to the top](#awwards)

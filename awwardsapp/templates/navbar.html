@@ -1,0 +1,41 @@
+<div class="navigation">
+    <div class="logo">
+        <a class="no-underline" href="{% url 'index' %}">
+            Awwards
+        </a>
+    </div>
+    <form action="{% url 'search_results' %}" role="search" class="navbar-form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="title">
+                </div>
+            </form>
+    {% if user.is_authenticated %}
+    <div class="dropdown">
+    <a href=""  class="btn btn-outline-danger dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">API</a>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="api/post">Post Api</a></li>
+    <li><a class="dropdown-item" href="api/profile">Profile Api</a></li>
+    </ul>
+</div>
+    <div class="navigation-icons">
+        <a href="/"  class="navigation-link">
+            <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+        <a  href="{%url 'edit-profile' %}" class="navigation-link notifica">
+            <i class="fas fa-edit"></i>
+            </i>
+            </a>
+            <a class="navigation-link notifica" href="{% url 'project' %}" ><i class="fas fa-plus"></i></a>
+        <a href="{% url 'profile' %}" class="navigation-link">
+            <i class="far fa-user-circle"></i>
+        </a>
+        <a href="{% url 'logout' %}" id="signout" class="navigation-link">
+            <i class="fas fa-sign-out-alt"></i>
+        </a>
+        {% else %}
+        <a href="{% url 'login' %}" class="navigation-link" ><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+        
+        {% endif %}
+    </div>
+    
+</div>

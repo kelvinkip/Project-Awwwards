@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100;200;300;400;600&family=Fira+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Playball&display=swap');
+@import url('//fonts.cdnfonts.com/css/billabong');
+
+body {
+    background: #fafafa;
+}
+
+.navigation {
+    background-color: #bdc3c7 → #2c3e50;
+    background-image: linear-gradient(315deg, #bdc3c7 0%, #2c3e50 74%);
+    height: 80px;
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    z-index: 2;
+    /* animation magic */
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+}
+
+.shrink {
+    height: 50px;
+}
+
+.navigation .logo a {
+    position: relative;
+    color: #000000;
+    font-size: 30px;
+    font-family: "billabong", sans-serif;
+    text-decoration: none;
+}
+
+.navigation-search-container {
+    position: relative;
+}
+
+.navigation-search-container input {
+    background-color: #fafafa;
+    padding: 3px 20px;
+    padding-left: 25px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.0975);
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.navigation-search-container .fa-search {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+
+    /* Navigation */
+    .navigation {
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .navigation-search-container {
+        display: none;
+    }
+
+    .navigation-icons {
+        display: flex;
+    }
+}
+
+.navigation-icons {
+    display: flex;
+}
+
+.navigation-search-container input:focus {
+    outline: none;
+}
+
+.navigation-search-container input::placeholder {
+    text-align: center;
+}
+
+.navigation-icons a {
+    text-decoration: none;
+}
+
+.navigation-link i {
+    margin-left: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+.modal-content{
+background: rgba( 9, 8, 8, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: white;
+font-family: 'Times New Roman', Times, serif;
+}
+.offcanvas{
+    background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+color: white;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+    
+    .container img{
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+.centered p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #040107cf;
+}
+.centered h2{
+    color: navy;
+    font-family: "billabong", sans-serif;
+    text-align: justify;
+    font-size: 2.8rem;
+}
+
+.pulse{
+    border-radius: 100rem;
+    padding: 1rem;
+    font-family: 'Avenir Next';
+    font-size: 1rem;
+    padding: .4rem 2rem;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(183, 119, 238, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(181, 173, 173, 0), rgba(18, 18, 18, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    
+}
+
+.register{
+    background-color: #eef2f5;
+    font-family: 'Times New Roman', Times, serif;
+    color: #020320;
+    font-weight: bold;
+}
+
+.register h6{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #020320;
+    font-weight: bold;
+}
+
+
+.login{
+    background-color: #eef2f5;
+    font-family: 'Times New Roman', Times, serif;
+    color: #020320;
+    font-weight: bold;
+}
+
+.login h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #020320;
+    font-weight: bold;
+}
+
+.container,project{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #020320;
+    font-weight: bold;
+}
+
+.profile{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #020320;
+    font-weight: bold;
+}
